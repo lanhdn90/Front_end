@@ -1,0 +1,15 @@
+body{
+    background-color: #Facd8a;
+}
+
+h1{
+    color: green;
+}
+
+#copyright {
+    color: blue;
+}
+
+.base_color{
+    color: red;
+}
