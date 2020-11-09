@@ -7,19 +7,36 @@
     Nội dung  của tiêu đề phải chính xác
     Tiêu đề phải hấp dẫn với người dùng
     Tiêu đề là duy nhất của page in your web site
-    Tiêu đề phải có độ dài duwosi65 ký tự -->
+    Tiêu đề phải có độ dài dưới 65 ký tự -->
     <title>Hello Word</title>
+    <!-- Phần này là phần giới thiệu nhỏ trong tìm kiếm google -->
+    <meta name="description" content="Phần này là phần giới thiệu nhỏ trong tìm kiếm google">
+    <!-- Những từ khóa có thể dùng để search -->
+    <meta name="keywords" content="Front_end">
     <link rel="stylesheet" href="../css/Style.css">
     <link rel="icon" href="../images/images.png">
 </head>
 <body>
-    <h1 >Hello word</h1>
-    <h1 class="base_color">Hello</h1>
-    <p id="copyright">Hello</p>
-    <img src="" alt="">
+    <!-- title in acttributes -->
+    <h1 title="Lời chào" >Hello word</h1>
+    <!-- Format đoạn văn bản hiển thị trên view giống như đoạn văn trong code -->
+    <pre>
+        var today = new Date();
+            document.writeln (today.getFullYear());
+    </pre>
+    <p>Luôn &nbsp;  luôn có thẻ title trong head
+        Nội dung  của tiêu đề phải chính xác
+        Tiêu đề phải hấp dẫn với người dùng
+        Tiêu đề là duy nhất của page in your web site
+        Tiêu đề phải có độ dài dưới 65 ký tự
+    </p>
+    <Blockquote>
+        Phần này là phần giới thiệu nhỏ trong tìm kiếm google
+    </Blockquote>
+    <p>Những từ khóa có thể dùng để search &copy;</p>
     
-    <input type="checkbox" name="mailList" id="mailList" checked>
-    <!-- acttributes checked để chọn tít vào checkbox -->
-    <label for="mailList">chào mọi người</label>
+    <address>128 Cách mạng tháng 8
+        <a href="https://github.com/lanhdn90/Front_end">Page GitHub Front_end</a>
+    </address>
 </body>
 </html>
