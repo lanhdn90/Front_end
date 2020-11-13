@@ -3,100 +3,60 @@
     padding: 0;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 600px ;
-    margin: 0px auto;
-    border: 1px solid #931420;
-    background-color: #fffded;
+
+
+.container{
+    display: flex;
+    /* Display Block hiển thị attribute chỉ trên một hàng.
+     còn tất cả sẽ chuyển xuống dưới
+    display None làm biến mất attribute 
+    display: inline and inline-block sẽ hiển thị tất cả trên cùng
+    một dòng; 
+    inline-block sẽ giữ lại padding marring của attribute
+    Display Flex sẽ đưa xuống dòng.
+    Sử dụng nhiều None, Block, Flex
+    */
 }
 
-header{
-    border-bottom: 1px solid #931420 ;
-    padding: 1.5em 0 2em;
-    background-image: -webkit-linear-gradient(80deg,#f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 100%);
+.sidebar{
+    width: 250px;
+    background-color: red;
+    height: 500px;
 }
 
-header img{
-    padding-right: 30px;
-    float: left;
-    
+.main{
+    width: calc(100% - 250px);
+    /* dùng calc để tính  */
+    height: 500px;
+    background-color: blue;
+    position: relative;
+}
+/* position top,bottom, right, left
+    - thuộc tích static là default
+    - absolute thì chắc chắn có relative và 
+    thuộc tính position relative phải nằm ở thằng cha
+    thuộc tính position absolute nằm ở thằng con
+
+*/
+
+.children-1{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: 2;
+    /* z-index: dùng để xác định attribute nào đề lên
+    attribute nào số càng lớn sẽ đè lên cái nhỏ hơn  */
 }
 
-header h2{
-    font-size: 170%;
-    color: #800000;
-
-}
-
-header h3{
-    font-size: 130%;
-    font-style: italic;
-
-}
-
-main{
-    clear: left;
-    padding: 0px 30px;
-}
-
-main a:hover{   
-    cursor: pointer;
-    font-style: italic;
-}
-
-main h1{
-    font-size: 150%;
-    border: 1px double #931420;
-    border-radius: 10px;
-    box-shadow: 2px 3px black;
-    padding: .3em 0;
-    padding-left: 30px;
-    margin-bottom: 5px;
-}
-
-main h2{
-    font-size: 130%;
-    color: #800000;
-    padding: .5em 0 .25em;
-}
-
-main h3{
-    font-size: 105%;
-    padding-bottom: .25em ;
-}
-
-main img{
-    padding-bottom: 1em;
-}
-
-main p{
-    padding-bottom: .5em;
-}
-
-main blockquote{
-    padding: .2em 0;
-    font-style: italic;
-}
-
-main ul{
-    padding: 0 0 .25em 1.25em;
-}
-
-main li{
-    padding-bottom: .35em;
-}
-
-footer{
-    background-color: #931420;
-    color: white;
-    padding: 1em 0;
-}
-footer p{
-    text-align: center;
-}
-
-.shadow{
-    text-shadow: 1px 1px 2px #800000;
+.children-2{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    z-index: 1;
 }

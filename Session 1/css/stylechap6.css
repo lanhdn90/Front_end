@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: aqua;
+    /* height: calc(100% - 100px); */
+    height: 500px;
+    width: 300px;
+}
+
+.main{
+    display: flex;
+    padding: 24px;
+    background-color: yellow;
+    width: calc(100% - 300px);
+}
+
+.sidebar-left{
+    background-color: white;
+    width: 100px;
+    border: 1px solid aqua;
+}
+
+.item{
+    background-color: black;
+    width: calc((100% - 100px)/2);
+}
+
+.sidebar-right{
+    background-color: rgb(22, 236, 94);
+    width: calc((100% - 100px)/2);
+}
+
+.sidebar-right:hover{
+    background-color: purple;
+}
