@@ -47,11 +47,13 @@ main a:hover{
 }
 
 main h1{
-
     font-size: 150%;
-    border-top: 1px solid #931420;
-    border-bottom: 1px solid #931420;
+    border: 1px double #931420;
+    border-radius: 10px;
+    box-shadow: 2px 3px black;
     padding: .3em 0;
+    padding-left: 30px;
+    margin-bottom: 5px;
 }
 
 main h2{
@@ -74,7 +76,7 @@ main p{
 }
 
 main blockquote{
-    padding: 2em o;
+    padding: .2em 0;
     font-style: italic;
 }
 
