@@ -3,60 +3,165 @@
     padding: 0;
 }
 
-
-
-.container{
-    display: flex;
-    /* Display Block hiển thị attribute chỉ trên một hàng.
-     còn tất cả sẽ chuyển xuống dưới
-    display None làm biến mất attribute 
-    display: inline and inline-block sẽ hiển thị tất cả trên cùng
-    một dòng; 
-    inline-block sẽ giữ lại padding marring của attribute
-    Display Flex sẽ đưa xuống dòng.
-    Sử dụng nhiều None, Block, Flex
-    */
+body{
+    /* set font-family */
+    font-family: Arial, Helvetica, sans-serif;
+    /* set font-size */
+    font-size: 100%;
+    /* set width */
+    width: 800px;
+    /* set margin */
+    margin: 0 auto;
+    /* set border */
+    border: 1px solid #931420;
+    /* set background-color */
+    background-color: #fffded;
 }
 
-.sidebar{
-    width: 250px;
-    background-color: red;
-    height: 500px;
+h2{
+    /* set color */
+    color: #800000;
+    /* set padding */
+    padding: .25em 0;
+}
+
+h3{
+    /* set font-size */
+    font-size: 105%;
+    /* set padding-bottom */
+    padding-bottom: 0.25em;
+}
+
+.header{
+    /* set padding-top: 1.5em và padding-bottom: 2em */
+    padding: 1.5em 0 2em;
+    display: flex;
+    /* set background-color */
+    background-image: -webkit-linear-gradient(80deg,#f6bb73 0%,#f6bb73 30%,white 50%,#f6bb73 100%);
+}
+
+.header .icon-header{
+    /* set height image */
+    height: 80px;
+    /* set padding-left và padding-right */
+    padding: 0 30px;
+}
+
+.header .text-header{
+    display: block
+}
+
+.text-header h2{
+    /* set font-size */
+    font-size: 170%;
+
+}
+
+.text-header h3{
+    /* set font-size */
+    font-size: 130%;
+    /* set font-style */
+    font-style: italic;
+}
+
+.shadow{
+    /* set text-shadow */
+    text-shadow: 1px 1px red;
 }
 
 .main{
-    width: calc(100% - 250px);
-    /* dùng calc để tính  */
-    height: 500px;
-    background-color: blue;
-    position: relative;
-}
-/* position top,bottom, right, left
-    - thuộc tích static là default
-    - absolute thì chắc chắn có relative và 
-    thuộc tính position relative phải nằm ở thằng cha
-    thuộc tính position absolute nằm ở thằng con
-
-*/
-
-.children-1{
-    position: absolute;
-    top: 20px;
-    left: -20px;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    z-index: 2;
-    /* z-index: dùng để xác định attribute nào đề lên
-    attribute nào số càng lớn sẽ đè lên cái nhỏ hơn  */
+    /* set display */
+    display: flex;
+    height: 569px;
 }
 
-.children-2{
-    position: absolute;
-    top: 10px;
-    left: -10px;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    z-index: 1;
+.aside{
+    /* set width bằng % */
+    width: 25%;
+    /* set padding-left và padding-bottom */
+    padding: 0 0 20px 20px;
+}
+
+.aside img{
+    /* set width */
+    width: 75px;
+    /* set height */
+    height: 75px;
+    /* set padding-bottom */
+    padding-bottom: 0.5em;
+}
+
+.section{
+    /* set width */
+    width: calc(100% - 25%);
+    /* set padding */
+    padding: 0 20px 20px;
+}
+
+.section h2{
+    /* set font-size */
+    font-size: 130%;
+}
+
+.section p{
+    padding-top: .2em;
+}
+
+.section blockquote{
+    padding: .2em 0;
+    font-style: italic;
+}
+
+.section h1{
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+
+.content{
+    padding: .3em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+    display: flex;
+}
+
+.heading-content h2{
+    padding-top: 0;
+}
+
+.heading-content h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+.img-content img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.section ul{
+    padding: 0 0 .25em 1.25em;
+}
+
+.section li{
+    padding-bottom: .35em;
+}
+
+.footer{
+    /* set background-color */
+    background-color: #931420 ;
+    /* set color */
+    color: white;
+    /* set padding-top và padding-bottom */
+    padding: 1em 0;
+}
+
+.footer p{
+    /* set text-align cho <p> element  */
+    text-align: center;
+}
+
+a:hover{
+    font-style: italic;
+    color: purple;
 }
